@@ -6,6 +6,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("../images/evening.jpg");
@@ -60,7 +69,42 @@ header a {
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
+footer{
+  color:var(--Light, #FFF);
+  background-image:linear-gradient(rgba(39,32, 68, 0.9), rgba(39, 32, 68, 0.9)) , url('../images/footer.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+padding:100px 0 204px 171px;
+}
+footer h3{
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+footer p{
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+opacity: 0.7;
+margin: 20px;
+line-height: normal;
+}
+footer ul{
+  padding:0;
+}
+footer li{
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+footer a{
+  color:#fff;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
