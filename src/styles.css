@@ -1,10 +1,13 @@
 body {
   font-family: Poppins, sans-serif;
-  background-color: #12101d;
+  background:#181525;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+.text-center{
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -22,9 +25,12 @@ body {
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+section .secondary {
+  background:#181525;
 }
 main {
   background-color: #12101d;
