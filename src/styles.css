@@ -1,12 +1,12 @@
 body {
   font-family: Poppins, sans-serif;
-  background:#181525;
+  background: #181525;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.text-center{
+.text-center {
   text-align: center;
 }
 .grid {
@@ -17,11 +17,41 @@ body {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-.img-responsive{
+.img-responsive {
   max-width: 100%;
+  display:block;
+}
+.card {
+  background: #272435;
+  box-shadow: 20px 20px 40px 0px rgba(7, 5, 19, 0.2);
+  margin: 30px 0;
+}
+.card-body{
+  padding:32px;
+
+}
+.btn {
+  display: flex;
+  color: var(--Light, #fff);
+  background: var(--Purple-Dark, #462cb2);
+  padding: 16px 32px 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 section {
@@ -30,7 +60,7 @@ section {
   padding: 100px;
 }
 section .secondary {
-  background:#181525;
+  background: #181525;
 }
 main {
   background-color: #12101d;
@@ -53,6 +83,22 @@ main h3 {
   font-weight: 700;
   line-height: normal;
   margin: 0;
+}
+main h4 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  margin:0;
+
+}
+main h5 {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+  margin:0;
+   
 }
 main p {
   font-size: 16px;
