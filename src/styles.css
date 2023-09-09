@@ -1,20 +1,63 @@
 body {
   font-family: Poppins, sans-serif;
-  background-color: #272044;
+  background-color: #12101d;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
-.grid{
-  display:grid;
+.grid {
+  display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns-with-first-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+.img-responsive{
+  max-width: 100%;
+}
+
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+main {
+  background-color: #12101d;
+  color: var(--Light, #fff);
+}
+main h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3px;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
 
+main h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+img {
+  width: 570px;
+  padding-top: 20px;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
@@ -70,39 +113,42 @@ header a {
   text-transform: uppercase;
 }
 
-footer{
-  color:var(--Light, #FFF);
-  background-image:linear-gradient(rgba(39,32, 68, 0.9), rgba(39, 32, 68, 0.9)) , url('../images/footer.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-padding:100px 0 204px 171px;
+footer {
+  color: var(--Light, #fff);
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 204px 171px;
 }
-footer h3{
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+footer h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-footer p{
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-opacity: 0.7;
-line-height: normal;
+footer p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.7;
+  line-height: normal;
 }
-footer ul{
-  padding:0;
+footer ul {
+  padding: 0;
 }
-footer li{
+footer li {
   list-style: none;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
-footer a{
-  color:#fff;
+footer a {
+  color: #fff;
   opacity: 0.7;
 }
-
 
 @media (max-width: 960px) {
   header {
@@ -116,5 +162,13 @@ footer a{
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
